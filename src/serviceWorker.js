@@ -12,7 +12,7 @@ const isLocalhost = Boolean(
   
   export function register(config) {
     if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
-      // The URL constructor is available in all browsers that support SW.
+      
       const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href);
       if (publicUrl.origin !== window.location.origin) {
         
@@ -59,7 +59,7 @@ const isLocalhost = Boolean(
                     
                 );
   
-                // Execute callback
+                
                 if (config && config.onUpdate) {
                   config.onUpdate(registration);
                 }
@@ -67,7 +67,7 @@ const isLocalhost = Boolean(
                
                 console.log('Content is cached for offline use.');
   
-                // Execute callback
+                
                 if (config && config.onSuccess) {
                   config.onSuccess(registration);
                 }
@@ -82,12 +82,12 @@ const isLocalhost = Boolean(
   }
   
   function checkValidServiceWorker(swUrl, config) {
-    // Check if the service worker can be found. If it can't reload the page.
+    
     fetch(swUrl, {
       headers: { 'Service-Worker': 'script' },
     })
       .then(response => {
-        // Ensure service worker exists, and that we really are getting a JS file.
+       
         const contentType = response.headers.get('content-type');
         if (
           response.status === 404 ||
