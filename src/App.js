@@ -6,44 +6,95 @@ function App() {
 
   return (
     <div className="App"> 
-      <Typography gutterBottom variant="h4" align="center">
-       HRIS Support
-       </Typography>
+
+      {/* Styles */}
       <Grid>
-        <Card style={{ maxWidth: 450, padding: "20px 5px", margin: "0 auto" }}>
+        <Card style=
+        {{ width: 800,
+          height: 500, 
+          padding: "100px 10px", 
+          margin: "auto",
+          position:'center',
+          left: '50%',
+          right: '50%'
+        }}>
+
           <CardContent>
-            <Typography gutterBottom variant="h6">
-              Contact Us
-          </Typography> 
-            <Typography variant="body2" color="textSecondary" component="p" gutterBottom>
-              If you have any concerns and problems, feel free to contact us and leave an email.
-              We would be more than happy to respond to you. Thank you and have a nice day!
-          </Typography> 
+
+                {/* Headline text */}
+                <Typography gutterBottom variant="h3" 
+                align="center">
+                Send us your concerns!
+                </Typography>
+
+                {/* Support text section */}
+                <Typography gutterBottom variant="h5" 
+                align="left">
+                Support
+                </Typography> 
+                       
+                {/* message to customers */}
+                <Typography variant="h6" 
+                color="textPrimary" 
+                component="p" 
+                align="justify" 
+                gutterBottom>   
+                If you have any concerns and problems, feel free to contact us and leave an email.
+                We would be more than happy to respond to you. Thank you and have a nice day!
+                </Typography> 
+
             <form>
-              <Grid container spacing={1}>
 
-                <Grid xs={12} sm={6} item>
-                  <TextField placeholder="Enter first name" label="First Name" variant="outlined" fullWidth required />
+                <Grid container spacing={1}>
+                
+                {/* Name section */}
+                <Grid xs={12} sm={12} item>
+                  <TextField 
+                  placeholder="lastname, firstname, middlename" 
+                  className="Name"
+                  label="Complete Name" 
+                  variant="outlined" 
+                  fullWidth required 
+                  />
                 </Grid>
 
-                <Grid xs={12} sm={6} item>
-                  <TextField placeholder="Enter last name" label="Last Name" variant="outlined" fullWidth required />
-                </Grid>
-
+                {/* Email section */}
                 <Grid item xs={12}>
-                  <TextField type="email" placeholder="Enter email" label="Email" variant="outlined" fullWidth required />
+                  <TextField 
+                  type="email"
+                  className="Email" 
+                  placeholder="Enter email" 
+                  label="Email" 
+                  variant="outlined" 
+                  fullWidth required 
+                  />
+                </Grid>
+   
+                {/* Message section */}
+                <Grid item xs={12}>
+                  <TextField 
+                  label="Message" 
+                  className="Message"
+                  multiline rows={9} 
+                  placeholder="Enter your message here" 
+                  variant="outlined" 
+                  fullWidth required 
+                  />
                 </Grid>
 
-                <Grid item xs={12}>
-                  <TextField type="number" placeholder="Enter phone number" label="Phone" variant="outlined" fullWidth required />
-                </Grid>
 
-                <Grid item xs={12}>
-                  <TextField label="Message" multiline rows={4} placeholder="Type your message here" variant="outlined" fullWidth required />
-                </Grid>
-
-                <Grid item xs={12}>
-                  <Button type="submit" variant="contained" color="primary" fullWidth>Submit</Button>
+                {/* Submit Button section */}
+                <Grid 
+                className="ButtonGrid"
+                container item xs={12} 
+                justify="flex-end"
+                >
+                  <Button 
+                  type="Submit" 
+                  variant="contained"
+                  color="primary"
+                  >Send  
+                  </Button>
                 </Grid>
 
               </Grid>
