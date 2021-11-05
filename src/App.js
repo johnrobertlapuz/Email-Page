@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { Grid, TextField, Button, Card, CardContent, Typography } from '@material-ui/core';
 
+
 function App() {
 
   return (
@@ -9,18 +10,28 @@ function App() {
 
       {/* Styles */}
       <Grid>
-        <Card style=
-        {{ width: 800,
+        <Card style= 
+        {{ 
+
+          fontFamily: 'monserrat',
+          display:'flex',
+          backgroundColor:'#0ABAB5',
+          color: 'black',
+          width: 800,
           height: 500, 
           padding: "100px 10px", 
           margin: "auto",
           position:'center',
           left: '50%',
-          right: '50%'
+          right: '50%',
+          borderRadius: '15px',
+          justifyContent:'center',
+         
+
         }}>
 
           <CardContent>
-
+          
                 {/* Headline text */}
                 <Typography gutterBottom variant="h3" 
                 align="center">
@@ -42,6 +53,7 @@ function App() {
                 If you have any concerns and problems, feel free to contact us and leave an email.
                 We would be more than happy to respond to you. Thank you and have a nice day!
                 </Typography> 
+                
 
             <form>
 
