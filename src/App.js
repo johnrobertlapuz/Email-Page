@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import { Grid, TextField, Button, Card, CardContent, Typography } from '@material-ui/core';
-import {monserrat} from '@material-ui/core'
 
 
 function App() {
@@ -13,20 +12,18 @@ function App() {
       <Grid>
         <Card style= 
         {{ 
-
-
           fontFamily: 'monserrat',
           display:'flex',
           background:'linear-gradient(to right, #0ABAB5, #43D6D1, #C5FFFD)',
-          width: 1190,
-          height: 340, 
+          width: 1110,
+          height: 325, 
           padding: "290px 225px", 
           margin: "auto",
           position:'center',
           left: '50%',
           right: '50%',
           borderRadius: '15px',
-          justifyContent:'center',
+          justifyContent:'center'
         }}>
 
           <CardContent>
@@ -46,6 +43,7 @@ function App() {
                        
                 {/* message to customers */}
                 <Typography variant="h6" 
+                classname="Message"
                 color="textPrimary" 
                 component="p" 
                 align="justify" 
@@ -84,8 +82,7 @@ function App() {
    
                 {/* Message section */}
                 <Grid item xs={12}>
-                  <TextField 
-                  
+                  <TextField  
                   label="Message" 
                   className="Message"
                   multiline rows={9} 
@@ -103,6 +100,7 @@ function App() {
                 justify="flex-end"
                 >
                   <Button 
+                  className="Button"
                   type="Submit" 
                   variant="contained"
                   color="primary"

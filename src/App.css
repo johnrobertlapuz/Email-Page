@@ -20,9 +20,6 @@
   
 }
 
-
-
-
 .App-link {
   color: white;
 }
@@ -49,9 +46,13 @@
 
 
 .Email {
+  color:white;
   border-radius: 0%;
  -webkit-box-shadow: 5px 5px 8px -4px #000000; 
   box-shadow: 5px 5px 8px -4px #000000;
 }
 
-
+.Message{
+  color:white;
+  font: 16;
+}
