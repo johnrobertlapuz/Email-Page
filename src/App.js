@@ -10,39 +10,35 @@ function App() {
 
       {/* Styles */}
       <Grid>
-        <Card style= 
+        <Card style=
         {{ 
           fontFamily: 'monserrat',
           display:'flex',
-          background:'linear-gradient(to right, #0ABAB5, #43D6D1, #C5FFFD)',
-          width: 1110,
-          height: 325, 
-          padding: "290px 225px", 
+          background:'linear-gradient(0deg, #0ABAB5, #0ABAB5, #C5FFFD)',
+          backgroundColor:'rgba(0.5, 0.5, 0.5, 0.5)',
+          alignSelf:'stretch',
+          width: 935,
+          height:200, 
+          padding:"340px",
+          paddingTop:"300px",
+          paddingBottom:"500px",
           margin: "auto",
-          position:'center',
           left: '50%',
           right: '50%',
           borderRadius: '15px',
           justifyContent:'center'
         }}>
+        
 
           <CardContent>
-          
                 {/* Headline text */}
                 <Typography gutterBottom variant="h3" fontFamily="monserrat"
                 align="center">
                 Send us your concerns!
                 </Typography>
-
-                {/* Support text section */}
-                <Typography gutterBottom variant="h5" 
-                
-                align="left">
-                Support
-                </Typography> 
-                       
+                    
                 {/* message to customers */}
-                <Typography variant="h6" 
+                <Typography variant="h4" 
                 classname="Message"
                 color="textPrimary" 
                 component="p" 
@@ -50,19 +46,17 @@ function App() {
                 gutterBottom>   
                 If you have any concerns and problems, feel free to contact us and leave an email.
                 We would be more than happy to respond to you. Thank you and have a nice day!
-                </Typography> 
-                
+                </Typography>             
 
             <form>
-
                 <Grid container spacing={1}>
                 
                 {/* Name section */}
-                <Grid xs={12} sm={12} item>
+                <Grid xs={1} sm={12} item>
                   <TextField 
                   placeholder="lastname, firstname, middlename" 
                   className="Name"
-                  label="Complete Name" 
+                  label="Complete Name"
                   variant="outlined" 
                   fullWidth required 
                   />
